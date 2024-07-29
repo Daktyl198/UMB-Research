@@ -25,10 +25,13 @@
             .then(json => {
                 json.inventorys.buildings.forEach((input) => {
                 if (input.item == undefined) return;
+
                 const name = input.item.name;
 
                 if (name != undefined) {
-                    data[name] = input.quantity;
+                    if (data[name] == undefined) {data[name] = 0};
+
+                    data[name] += Number(input.quantity);
                 }
                 });
             })
