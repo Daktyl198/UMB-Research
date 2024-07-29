@@ -3,7 +3,7 @@
     import Table from '../lib/table.svelte';
 
     const amount = 25;
-    const stoneResearch = get("Advanced Stone Research");
+    const stoneResearch = get("Advanced Stone Research") + get("Advanced Codex");
 
     const t5refinedbrickpackage = get("Refined Exquisite Brick Package") * 10;
 

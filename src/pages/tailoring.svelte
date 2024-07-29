@@ -3,7 +3,7 @@
     import Table from '../lib/table.svelte';
 
     const amount = 25;
-    const clothResearch = get("Advanced Cloth Research");
+    const clothResearch = get("Advanced Cloth Research") + get("Advanced Codex");
 
     const t5refinedclothpackage = get("Refined Exquisite Cloth Package") * 10;
 

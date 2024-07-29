@@ -3,7 +3,7 @@
     import Table from '../lib/table.svelte';
 
     const amount = 25;
-    const metalResearch = get("Advanced Metal Research");
+    const metalResearch = get("Advanced Metal Research") + get("Advanced Codex");
 
     const t1ingotpackage = get("Pyrelite Ingot Package") * 10;
     const t2ingotpackage = get("Aurumite Ingot Package") * 10;

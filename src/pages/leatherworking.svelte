@@ -4,7 +4,7 @@
 
     const amount = 25;
 
-    const leatherResearch = get("Advanced Leather Research");
+    const leatherResearch = get("Advanced Leather Research") + get("Advanced Codex");
 
     const t5refinedleatherpackage = get("Refined Exquisite Leather Package") * 10;
 

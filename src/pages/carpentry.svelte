@@ -3,7 +3,7 @@
     import Table from '../lib/table.svelte';
 
     const amount = 25;
-    const woodResearch = get("Advanced Wood Research");
+    const woodResearch = get("Advanced Wood Research") + get("Advanced Codex");
 
     const t5refinedplankpackage = get("Refined Exquisite Wood Plank Package") * 10;
 

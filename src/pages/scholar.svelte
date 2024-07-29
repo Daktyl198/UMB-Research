@@ -4,17 +4,21 @@
 
     const amount = 25;
 
+    const t5codex = get("Advanced Codex");
+
+    const needt5codex = amount - t5codex;
+
     const clothResearch = get("Advanced Cloth Research");
     const leatherResearch = get("Advanced Leather Research");
     const metalResearch = get("Advanced Metal Research");
     const woodResearch = get("Advanced Wood Research");
     const stoneResearch = get("Advanced Stone Research");
 
-    const needClothResearch = amount - clothResearch;
-    const needLeatherResearch = amount - leatherResearch;
-    const needMetalResearch = amount - metalResearch;
-    const needWoodResearch = amount - woodResearch;
-    const needStoneResearch = amount - stoneResearch;
+    const needClothResearch = needt5codex - clothResearch;
+    const needLeatherResearch = needt5codex - leatherResearch;
+    const needMetalResearch = needt5codex - metalResearch;
+    const needWoodResearch = needt5codex - woodResearch;
+    const needStoneResearch = needt5codex - stoneResearch;
 
     const t1vial = get("Rough Glass Vial");
     const t2vial = get("Simple Glass Vial");
@@ -183,30 +187,40 @@
 
     const tabledata = [
         {
+            name: "Codex",
+            tier: [
+                {
+                    tier: "T5",
+                    have: t5codex,
+                    need: needt5codex
+                }
+            ]
+        },
+        {
             name: "Research",
             tier: [
                 {
-                    tier: "Cloth",
+                    tier: "T5 Cloth",
                     have: clothResearch,
                     need: needClothResearch
                 },
                 {
-                    tier: "Leather",
+                    tier: "T5 Leather",
                     have: leatherResearch,
                     need: needLeatherResearch
                 },
                 {
-                    tier: "Metal",
+                    tier: "T5 Metal",
                     have: metalResearch,
                     need: needMetalResearch
                 },
                 {
-                    tier: "Wood",
+                    tier: "T5 Wood",
                     have: woodResearch,
                     need: needWoodResearch
                 },
                 {
-                    tier: "Stone",
+                    tier: "T5 Stone",
                     have: stoneResearch,
                     need: needStoneResearch
                 }
@@ -483,8 +497,6 @@
             ]
         }
     ];
-
-    console.log(tabledata);
 
 </script>
 
